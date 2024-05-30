@@ -341,6 +341,9 @@ body{
     .content-2 .wrapContent-2 p:last-child{
         padding-bottom: 0;
     }
+    .About .content-2 .wrapContent-2 .Text-1 p:first-of-type{
+        font-size: 4rem;
+    }
 }
 @media (max-width:350px){
     html{
