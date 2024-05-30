@@ -1,6 +1,6 @@
 :root {
-    --primary: #45433c;
-    --bg:#918564;
+    --primary: #587689;
+    --bg:#7595a9;
     --highlight: #E61010;
 }
 *{
@@ -30,7 +30,7 @@ body{
     align-items: center;
     padding: 1rem 7%;
     background-color: var(--primary);
-    border-bottom: 1px solid #645833;
+    border-bottom: 1px solid var(--bg);
     position: fixed;
     top: 0;
     left: 0;
@@ -129,12 +129,13 @@ body{
 }
 
 .About .content-2{
-    height: 100vh;
     margin: auto 1rem;
     border-radius: 4rem;
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid #5ae4c6;
+    border-top: 1px solid #5ae4c6;
     z-index: -2;
     position: relative;
+    margin-bottom: 10rem;
 }
 .About .content-2 h1 span{
     height: 50%;
@@ -143,10 +144,9 @@ body{
     position: absolute;
     left: 0;
     bottom: 0;
-    border-top: 1px solid var(--primary);
     z-index: -1;
 }
-.About .content-2 .Text-1 .bag1{
+.About .content-2 .wrapContent .Text-1 .bag1{
     display: flex;
     justify-content: center;
     font-size: 2rem;
@@ -198,6 +198,10 @@ body{
 .About .content-2 .Text-2{
     text-indent: 1rem;
 }
+
+.content-2 .wrapContent-2 p:last-of-type{
+    padding-bottom: 5rem;
+}
 .footer{
     background-color: white;
     color: #010101;
@@ -205,8 +209,48 @@ body{
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
-    position: absolute;
+    position: fixed;
+    bottom: 0;
 }
+.content-2 .wrapContent-2{
+    position: relative;
+    padding: 1rem;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+.content-2 .wrapContent-2 p:first-of-type{
+    font-size: 8rem;
+    opacity: 0.7;
+    color: rgb(163, 181, 244);
+    letter-spacing: 2rem;
+}
+.content-2 .wrapContent-2 .Text-1{
+    width: 60%;
+}
+.content-2 .wrapContent-2 ul{
+    margin-left: 2rem;
+}
+.content-2 .wrapContent-2 .Text-1 .bag1{
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.content-2 .wrapContent-2 .Text-1 .bag1 h2{
+    color: #417de6;
+}
+.content-2 .wrapContent-2 .doc{
+    width: 40%;
+    background-size: cover;
+}
+.content-2 .wrapContent-2 .doc img{
+    width: 100%;
+    height: 50%;
+    border-radius: 1rem;
+}
+
+
 
 
 /* media queries */
@@ -293,6 +337,9 @@ body{
     }
     .hero .content h1, .hero, .hero .content p {
         font-size: 3rem;
+    }
+    .content-2 .wrapContent-2 p:last-child{
+        padding-bottom: 0;
     }
 }
 @media (max-width:350px){
