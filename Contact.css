@@ -22,8 +22,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     box-shadow: 0.5rem 0.5rem 2rem rgb(0, 0, 0, 0.7);
 }   
+.WrapElemen .content-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.WrapElemen .content-1  .photo{
+    width: 10rem;
+    height: 10rem;
+    background-image: url(./profil.jpg);
+    background-position: 2rem;
+    background-size: cover;
+    border-radius: 100%;
+}
+.WrapElemen .content-1 p{
+    font-size: 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.WrapElemen .content-1 h1 {
+    font-size: 1rem;
+}
+.WrapElemen .content-1 span i{
+    font-size: inherit;
+}
+.content-1 h3 span{
+    color: red;
+    font-size: 1rem;
+}
+.content-1 h3{
+    letter-spacing: 0.2rem;
+    opacity: 0.75;
+}
 .container .WrapElemen .content{
     margin-bottom: 2rem;
     width: 100%;
@@ -103,6 +137,7 @@
     border-radius: 2rem;
     color: white;
 }
+
 @media (max-width:750px){
     html{
         font-size: 70%;
