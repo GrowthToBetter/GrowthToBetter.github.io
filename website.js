@@ -12,3 +12,21 @@ document.addEventListener('click',function(e){
         navbarNav.classList.remove('active')
     }
 })
+const Context=document.querySelector('.context')
+const displayContact=document.querySelector('#Contact')
+const MediaQuery= window.matchMedia('(max-width:750px)');
+
+function handlingMediaQuery(event) {
+  if(event.matches){
+    displayContact.onclick=()=>{
+      open('Contact.html','_blank')
+    }
+    
+  }else{
+    displayContact.onclick=()=>{
+      Context.classList.toggle('active')
+    }
+  }
+}
+MediaQuery.addEventListener('change',handlingMediaQuery)
+handlingMediaQuery(MediaQuery)
